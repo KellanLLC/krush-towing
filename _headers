@@ -1,0 +1,5 @@
+# Media is served with a day of cache (the filenames carry no hash, so a
+# re-encode under the same name has to be able to reach a browser that has
+# already been here), and pages with none.
+/assets/*
+  Cache-Control: public, max-age=86400
